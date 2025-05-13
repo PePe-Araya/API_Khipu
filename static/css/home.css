@@ -1,0 +1,289 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('url no existente');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.parrafos-sessions {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: rgba(58, 155, 219, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Estilos del contenedor principal */
+.cont {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos de los botones de navegación */
+.navigation-buttons .button {
+    display: inline-block;
+    margin: 10px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #3AB4F2;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #3AB4F2;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button a:hover {
+    background-color: #3AB4F2;
+    color: #fff;
+}
+
+/* Estilos del botón de cerrar sesión */
+button[type="submit"] {
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: red;
+    color: #fff;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: rgba(58, 155, 219, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.link-casablanca {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-casablanca:hover {
+    color: #0078AA;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    margin: 0 10px;
+}
+
+/* Estilo para los botones personalizados */
+.custom-button {
+    background-color: #3AB4F2;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #3AB4F2;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #0078AA;
+    color: #fff;
+}
+
+/* Estilos de responsividad (cambios según el tamaño de la pantalla) */
+@media (max-width: 768px) {
+    /* Ajusta aquí los estilos para pantallas más pequeñas */
+    .navbar .logo {
+        width: 150px;
+    }
+    .parrafos-sessions {
+        font-size: 16px;
+    }
+
+    /* Por ejemplo, puedes ocultar algunos elementos o cambiar tamaños de fuente en pantallas más pequeñas */
+    .button a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    /* ... y otros estilos para pantallas pequeñas ... */
+}
+
+.personitas{
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#autocompleteResults {
+    position: absolute;
+    width: 20%;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px transparent;
+    background-color: rgba(58, 155, 219, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    color: #fff;
+}
+
+#autocompleteResultsDirectiva {
+    position: absolute;
+    width: 20%;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px transparent;
+    background-color: rgba(58, 155, 219, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    color: #fff;
+}
+
+#rukanAndNameResults {
+    position: absolute;
+    width: 20%;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px transparent;
+    background-color: rgba(58, 155, 219, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    color: #fff;
+}
+
+.autocomplete-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.autocomplete-item:hover {
+    background-color: #0078AA;
+}
+
+.offcanvas-header {
+    text-align: center;
+    max-height: 50px; 
+}
+
+.offcanvas-title{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    display: block; 
+}
+
+.btn_cerrar {
+    background-image: url('imagenes/btn_cerrar.png'); /* Ruta de tu imagen */
+    background-size: 50px 50px; /* Tamaño de la imagen */
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen en el botón */
+    width: 60px; /* Ancho del botón, ajusta según sea necesario */
+    height: 60px; /* Altura del botón, ajusta según sea necesario */
+    border-radius: 30px; /* Hace el botón redondo */
+    border: none; /* Elimina el borde del botón */
+    background-color: transparent; /* Hace el fondo del botón transparente */
+    margin-top: 10px;;
+}
+
+.btn_menu {
+    color: #fff; /* Color del texto */
+    background-color: #0d6efd; /* Color de fondo */
+    border-color: #0d6efd; /* Color del borde */
+    font-size: 16px; /* Tamaño del texto más grande */
+    padding: 15px 30px; /* Espaciado interno más grande para un botón más grande */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    transition: all 0.3s ease; /* Transición suave para efectos de hover y focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidad */
+    cursor: pointer; /* Cursor de mano para indicar que es un botón clickeable */
+}
+
+.btn_menu:hover, .btn-primary:focus {
+    background-color: #0b5ed7; /* Color de fondo más oscuro al pasar el mouse o enfocar */
+    border-color: #0b5ed7; /* Color del borde más oscuro al pasar el mouse o enfocar */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada para efecto 3D */
+    transform: translateY(-2px); /* Eleva ligeramente el botón */
+}
+
+.btn_menu:active {
+    background-color: #0a58ca; /* Color de fondo aún más oscuro al presionar */
+    border-color: #0a58ca; /* Color del borde aún más oscuro al presionar */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25); /* Sombra menos pronunciada */
+    transform: translateY(-1px); /* Efecto de presión */
+}
+
+.btn_cerrar_sesion {
+    color: #fff; /* Color del texto */
+    background-color: #d9534f; /* Color de fondo rojo */
+    border-color: #d43f3a; /* Color del borde rojo */
+    font-size: 16px; /* Tamaño del texto más grande */
+    padding: 5px 10px; /* Espaciado interno más grande para un botón más grande */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    transition: all 0.3s ease; /* Transición suave para efectos de hover y focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidad */
+    cursor: pointer; /* Cursor de mano para indicar que es un botón clickeable */
+}
+
+.btn_cerrar_sesion:hover, .btn-primary:focus {
+    background-color: #c9302c; /* Color de fondo más oscuro al pasar el mouse o enfocar */
+    border-color: #ac2925; /* Color del borde más oscuro al pasar el mouse o enfocar */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada para efecto 3D */
+    transform: translateY(-2px); /* Eleva ligeramente el botón */
+}
+
+.btn_cerrar_sesion:active {
+    background-color: #b92c28; /* Color de fondo aún más oscuro al presionar */
+    border-color: #a94442; /* Color del borde aún más oscuro al presionar */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25); /* Sombra menos pronunciada */
+    transform: translateY(-1px); /* Efecto de presión */
+}
